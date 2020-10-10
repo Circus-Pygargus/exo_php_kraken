@@ -47,3 +47,9 @@ commit -m "mise en place architecture MVC : Controller"
 création /templates/base.html.twig
 création /template/index.html.twig
 commit -m "ajout premier template"
+
+
+création KrakenController
+replacement de /Application dans /src/
+correction coquille dans index.html.twig
+commit -m "Ajout KrakenController"
