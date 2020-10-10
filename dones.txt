@@ -21,3 +21,9 @@ création .env.sample
 install de dotenv :
     composer require vlucas/phpdotenv
 commit -m "ajout .env"
+
+
+
+ajout autoload psr-4 (modif de composer.json puis:)
+    composer dumpautoload
+commit -m "mise en place architecture MVC : DatabaseConfig"
