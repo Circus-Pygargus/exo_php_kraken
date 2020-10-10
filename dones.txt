@@ -6,3 +6,12 @@ je vais me faciliter la vie et utiliser altorouter pour géter mes routes =)   h
 création du fichier README.md
 
 ajout du fichier .htaccess
+
+commit -m "premier commit"
+
+
+
+création du fichier index.php en y collant la base pour le fonctionnement des routes avec altorouter
+commit -m "mise en place du router"
+
+
