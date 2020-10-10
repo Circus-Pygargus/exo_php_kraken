@@ -15,3 +15,9 @@ création du fichier index.php en y collant la base pour le fonctionnement des r
 commit -m "mise en place du router"
 
 
+
+création .env
+création .env.sample
+install de dotenv :
+    composer require vlucas/phpdotenv
+commit -m "ajout .env"
