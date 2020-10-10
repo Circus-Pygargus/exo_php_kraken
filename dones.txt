@@ -32,3 +32,8 @@ commit -m "mise en place architecture MVC : DatabaseConfig"
 
 ajout fichier /Application/Database.php
 commit -m "mise en place architecture MVC : Database"
+
+
+
+ajout fichier /Application/Template.php
+commit -m "mise en place architecture MVC : Template"
