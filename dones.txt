@@ -27,3 +27,8 @@ commit -m "ajout .env"
 ajout autoload psr-4 (modif de composer.json puis:)
     composer dumpautoload
 commit -m "mise en place architecture MVC : DatabaseConfig"
+
+
+
+ajout fichier /Application/Database.php
+commit -m "mise en place architecture MVC : Database"
