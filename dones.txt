@@ -1,0 +1,8 @@
+install de tous les scripts habituels via vagrant (zip, git, apache, php, mysql, phpMyAdmin, mise en place d'un modrewrite, composer, nodejs, yarn, sass, twig)
+
+je vais me faciliter la vie et utiliser altorouter pour géter mes routes =)   http://altorouter.com/usage/install.html
+    composer require altorouter/altorouter
+
+création du fichier README.md
+
+ajout du fichier .htaccess
