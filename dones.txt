@@ -42,3 +42,8 @@ commit -m "mise en place architecture MVC : Template"
 
 ajout fichier /Application/Controller.php
 commit -m "mise en place architecture MVC : Controller"
+
+
+création /templates/base.html.twig
+création /template/index.html.twig
+commit -m "ajout premier template"
