@@ -6,7 +6,7 @@ namespace App\Entity;
 use App\Application\Database;
 
 
-class Tentacles extends Database
+class Tentacle extends Database
 {
     /* ############### PROPERTIES ############### */
 
@@ -205,7 +205,7 @@ class Tentacles extends Database
      */
     public function add (string $name, int $lifePoints, int $force, int $dexterity, int $constitution): bool
     {
-        $sql = "INSERT INTO tentacles(name, life_points, force, dexterity, constitution)
+        $sql = "INSERT INTO tentacle(name, life_points, force, dexterity, constitution)
                 VALUES (:name, :life_points, :force, :dexterity, :constitution";
         $this->prepare($sql);
         $this->bindParam(':name', $name, \PDO::PARAM_STR);
@@ -244,7 +244,7 @@ class Tentacles extends Database
      */
     public function getById ($id): array
     {
-        $sql = "SELECT * FROM tentacles WHERE id=:id";
+        $sql = "SELECT * FROM tentacle WHERE id=:id";
         $this->prepare($sql);
         $this->bindParam(':id', $id, \PDO::PARAM_INT);
         $this->execute();

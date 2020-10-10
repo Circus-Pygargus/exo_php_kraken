@@ -58,7 +58,8 @@ commit -m "Ajout KrakenController"
 
 création des entités :
     - /src/Entity/Kraken.php     -> commit -m "création entité kraken"
-    - /src/Entity/Tentacles.php  -> commit -m "création entité tentacles"
+    - /src/Entity/Tentacle.php  -> commit -m "création entité tentacle"
+    - /src/Entity/Power.php  -> commit -m "création entité power"
 
 
 
