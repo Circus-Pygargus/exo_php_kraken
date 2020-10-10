@@ -53,3 +53,34 @@ création KrakenController
 replacement de /Application dans /src/
 correction coquille dans index.html.twig
 commit -m "Ajout KrakenController"
+
+
+
+création des entités :
+    - /src/entity/Kraken.php     -> commit -m "création entité kraken"
+
+
+
+
+
+les tables :
+kraken :
+    _ id (int)
+    _ nom (string)
+    _ age (int)
+    _ taille (en mêtre) (int)
+    _ poids (en tonnes) (int)
+    _ tentacules (string, liste des tentaculeId séparés par des ;)
+    _ pouvoirs (string, liste des pouvoirs_id séparés par des ;)
+
+tentacule :
+    _ id (int)
+    _ nom (string)
+    _ points de vies (int)
+    _ force (int)
+    _ dextérité (int)
+    _ constitution (int)
+
+pourvoir :
+    _ id (int)
+    _ nom (string)
