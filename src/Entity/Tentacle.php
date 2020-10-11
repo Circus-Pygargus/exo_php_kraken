@@ -16,6 +16,11 @@ class Tentacle extends Database
     private $id;
 
     /**
+     * @var int
+     */
+    private $krakenId;
+
+    /**
      * @var string
      */
     private $name;
@@ -64,6 +69,31 @@ class Tentacle extends Database
     public function setId (int $id): self
     {
         $this->id = $id;
+        return $this;
+    }
+
+
+
+    /**
+     * Get the value of krakenId
+     * 
+     * @return int
+     */
+    public function getKrakenId (): int
+    {
+        return $this->krakenId;
+    }
+
+    /**
+     * Set the value of krakenId
+     * 
+     * @param int $krakenId
+     * 
+     * @return self
+     */
+    public function setKrakenId (int $krakenId): self
+    {
+        $this->ikrakenIdd = $krakenId;
         return $this;
     }
 
@@ -203,11 +233,12 @@ class Tentacle extends Database
      * 
      * @return bool
      */
-    public function add (string $name, int $lifePoints, int $force, int $dexterity, int $constitution): bool
+    public function add (int $krakenId, string $name, int $lifePoints, int $force, int $dexterity, int $constitution): bool
     {
-        $sql = "INSERT INTO tentacle(name, life_points, force, dexterity, constitution)
-                VALUES (:name, :life_points, :force, :dexterity, :constitution";
+        $sql = "INSERT INTO tentacle(kraken_id,name, life_points, force, dexterity, constitution)
+                VALUES (:kraken_id, :name, :life_points, :force, :dexterity, :constitution";
         $this->prepare($sql);
+        $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
         $this->bindParam(':name', $name, \PDO::PARAM_STR);
         $this->bindParam(':life_points', $lifePoints, \PDO::PARAM_INT);
         $this->bindParam(':force', $force, \PDO::PARAM_INT);

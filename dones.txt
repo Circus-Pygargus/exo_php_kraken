@@ -60,6 +60,11 @@ création des entités :
     - /src/Entity/Kraken.php     -> commit -m "création entité kraken"
     - /src/Entity/Tentacle.php  -> commit -m "création entité tentacle"
     - /src/Entity/Power.php  -> commit -m "création entité power"
+modif tentacle.php puis commit -m "modif entity tentacle"
+
+
+
+
 
 
 
@@ -72,17 +77,21 @@ kraken :
     _ age (int)
     _ taille (en mêtre) (int)
     _ poids (en tonnes) (int)
-    _ tentacules (string, liste des tentaculeId séparés par des ;)
-    _ pouvoirs (string, liste des pouvoirs_id séparés par des ;)
 
-tentacule :
+tentacle :
     _ id (int)
+    _ kraken_id (int) (foreign key kraken)
     _ nom (string)
     _ points de vies (int)
     _ force (int)
     _ dextérité (int)
     _ constitution (int)
 
-pourvoir :
+power :
     _ id (int)
     _ nom (string)
+
+kraken_power :
+    _ id (int)
+    _ kraken_id (int) (foreign key kraken)
+    _ power_id (int) (foreign key power)
