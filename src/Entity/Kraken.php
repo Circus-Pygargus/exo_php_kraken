@@ -40,18 +40,6 @@ class Kraken extends Database
     private $weight;
 
 
-    /**
-     * @var string
-     */
-    private $tentacles;
-
-    
-    /**
-     * @var string
-     */
-    private $powers;
-
-
 
     /* ############### GETTERS AND SETTERS ############### */
 
@@ -171,54 +159,6 @@ class Kraken extends Database
     public function setWeight (int $weight): self
     {
         $this->weight = $weight;
-        return $this;
-    }
-
-
-    /**
-     * Get the value of tentacles
-     * 
-     * @return string
-     */
-    public function getTentacles (): string
-    {
-        return $this->tentacles;
-    }
-
-    /**
-     * Set the value of tentacles
-     * 
-     * @param string $tentacles
-     * 
-     * @return self
-     */
-    public function setTentacles (string $tentacles): self
-    {
-        $this->tentacles = $tentacles;
-        return $this;
-    }
-
-
-    /**
-     * Get the value of powers
-     * 
-     * @return string
-     */
-    public function getPowers (): string
-    {
-        return $this->powers;
-    }
-
-    /**
-     * Set the value of powers
-     * 
-     * @param string $powers
-     * 
-     * @return self
-     */
-    public function setPowers (string $powers): self
-    {
-        $this->powers = $powers;
         return $this;
     }
 
