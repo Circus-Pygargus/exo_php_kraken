@@ -60,7 +60,8 @@ création des entités :
     - /src/Entity/Kraken.php     -> commit -m "création entité kraken"
     - /src/Entity/Tentacle.php  -> commit -m "création entité tentacle"
     - /src/Entity/Power.php  -> commit -m "création entité power"
-modif tentacle.php puis commit -m "modif entity tentacle"
+modif tentacle.php puis commit -m "modif entité Tentacle"
+    - /src/Entity/KrakenPower.php -> commit -m "création entité krakenPower"
 
 
 

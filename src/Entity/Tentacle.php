@@ -225,6 +225,7 @@ class Tentacle extends Database
     /**
      * Add a tentacle
      * 
+     * @param int $krakenId
      * @param string $name
      * @param int $lifePoints
      * @param int $force
