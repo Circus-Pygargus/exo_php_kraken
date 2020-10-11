@@ -93,4 +93,19 @@ class Power extends Database
 
         return $this->fetch(); 
     }
+
+
+    /**
+     * Get all powers
+     * 
+     * @return array
+     */
+    public function getAll (): array
+    {
+        $sql = "SELECT * FROM power";
+        $this->prepare($sql);
+        $this->execute();
+
+        return $this->fetchAll();
+    }
 }
