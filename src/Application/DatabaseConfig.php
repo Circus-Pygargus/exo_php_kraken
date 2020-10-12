@@ -17,7 +17,7 @@ class DatabaseConfig
     private function config ()
     {
         // load phpdotenv
-        $dotenv = Dotenv::createImmutable($_SERVER["DOCUMENT_ROOT"]);
+        $dotenv = Dotenv::createImmutable($_SERVER["DOCUMENT_ROOT"] . '/..');
 
         $dotenv->load();
         
