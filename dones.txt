@@ -100,6 +100,9 @@ commit -m "correction emplacement .env après ajout /public"
 création de la méthode KrakenController->create()
 commit -m "ajout gestion back de la route /kraken/create"
 
+création du fichier /public/js/krane-create.js
+commit -m "ajout gestion front /kraken/create"
+
 
 
 
