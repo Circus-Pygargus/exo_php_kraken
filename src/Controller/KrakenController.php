@@ -83,4 +83,15 @@ class KrakenController extends Controller
             echo json_encode($response);
         }
     }
+
+
+    /**
+     * route /kraken/krakenId
+     * 
+     * Display infos about requested kraken
+     */
+    public function infos ($krakenId)
+    {
+        return $this->twig->render('kraken/infos.html.twig');
+    }
 }

@@ -117,6 +117,9 @@ Création de l'interface d'affichage et de modification du kraken :
 création de la route /kraken/{krakenID}
 commit- m "création de la route /kraken/{krakenId}"
 
+création de la méthode infos($krakenId) dans KrakenController
+commit -m "backend : création méthode pour gestion de la route /kraken/{krakenId} en GET" 
+
 
 
 
