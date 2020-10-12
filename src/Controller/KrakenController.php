@@ -26,7 +26,7 @@ class KrakenController extends Controller
      */
     public function new ()
     {
-        return $this->twig->render('kraken_new/index.html.twig');
+        return $this->twig->render('kraken/new.html.twig');
     }
 
 

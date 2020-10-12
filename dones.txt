@@ -75,7 +75,9 @@ modif de la const PATH pour '../templates' dans /Application/Template.php
 et modif dans index.php du chemin pour aller chercher l'autoload en début de fichier
 commit -m "déplacement index.php vers /publilc"
 
+
 commit -m "déplacement .htaccess vers /public"
+
 
 ajout de la route /kraken/new dans index.php
 ajout gestion de la route /kraken/new dans KrakenController.php
@@ -105,6 +107,14 @@ commit -m "ajout gestion front /kraken/create"
 
 modif dans fichier kraken.sql (manquait le contenu de la table kraken ...)
 commit -m "finition mise en place bdd"
+
+modif du nom du template /templates/kraken_new/index.html.twig en /templates/kraken/new.html.twig
+commit -m "modification architecture templates"
+
+
+Création de l'interface d'affichage et de modification du kraken :
+
+
 
 
 
