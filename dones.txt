@@ -84,6 +84,9 @@ commit -m "ajout et gestion de la route /kraken/new"
 ajout de bootstrap pour se faciliter la tâche (surtout quici, l'intérêt c'est de faire du php...)
 commit -m "ajout bootstrap"
 
+création du formulaire de nouveau kraken dans /templates/kraken_new/index.html
+commit -m "création formulaire nouveau kraken"
+
 
 
 
