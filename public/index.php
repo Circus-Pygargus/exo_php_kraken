@@ -37,6 +37,6 @@ $action = $match['target']['a'];
 $object = new $controller();
 
 // call the method
-count($match['params']) === 0 ? $print = $object->{$action}() : $print= $object->{$action($match['params'])};
+count($match['params']) === 0 ? $print = $object->{$action}() : $print= $object->{$action}($match['params']);
 
 echo $print;
