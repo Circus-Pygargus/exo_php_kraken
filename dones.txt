@@ -66,6 +66,8 @@ modif Power.php (ajout méthode getAll qui servira à savoir si la base de donn�
 modif entité Kraken -> commit -m "modif entité Kraken"
 modif entité tentacle -> commit -m "modif entité Tentacle"
 
+création bdd -> commit -m "création bdd"
+
 
 
 
