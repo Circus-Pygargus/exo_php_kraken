@@ -1,17 +1,21 @@
 <?php
 
-require_once 'vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
 $router = new AltoRouter();
 
 /* params for routes :
-    html request method
-    path for this route
-    array :
+    - html request method
+    - path for this route
+    - array :
         controller name
         method name
 */
+// home
 $router->map('GET', '/', array('c' => 'KrakenController', 'a' => 'index'));
+// create a kraken
+$router->map('POST', '/create', array('c' => 'KrakeController', 'a' => 'create'));
+
 
 
 $match = $router->match();

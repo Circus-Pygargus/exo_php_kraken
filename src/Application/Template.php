@@ -10,7 +10,7 @@ use \Twig_Environment;
 
 class Template
 {
-    private const PATH = "templates";
+    private const PATH = "../templates";
 
     /**
      * @var Twig_Loader_Filesystem

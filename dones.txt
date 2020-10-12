@@ -68,6 +68,13 @@ modif entité tentacle -> commit -m "modif entité Tentacle"
 
 création bdd -> commit -m "création bdd"
 
+déplacement de index.php dans /public
+modif du fichier /etc/apache2/sites-available/000-default.conf pour faire pointer vers le nouvel emplacement de index.php
+sauf qu'il faut aussi :
+modif de la const PATH pour '../templates' dans /Application/Template.php
+et modif dans index.php du chemin pour aller chercher l'autoload en début de fichier
+commit -m "déplacement index.php vers /publilc"
+
 
 
 
