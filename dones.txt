@@ -75,6 +75,8 @@ modif de la const PATH pour '../templates' dans /Application/Template.php
 et modif dans index.php du chemin pour aller chercher l'autoload en début de fichier
 commit -m "déplacement index.php vers /publilc"
 
+commit -m "déplacement .htaccess vers /public"
+
 
 
 
