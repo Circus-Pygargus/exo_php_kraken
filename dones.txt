@@ -97,6 +97,9 @@ commit -m "correction coquilles"
 modif du chemin pour DotEnv dans DatabaseConfig.php (ajout de .'/..' pour sortit de /public car il va chercher dans $_SERVER["DOCUMENT_ROOT"] et ce dernier à changé depuis le déplacement vers /public)
 commit -m "correction emplacement .env après ajout /public"
 
+création de la méthode KrakenController->create()
+commit -m "ajout gestion back de la route /kraken/create"
+
 
 
 
