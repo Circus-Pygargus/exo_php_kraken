@@ -114,6 +114,9 @@ commit -m "modification architecture templates"
 
 Création de l'interface d'affichage et de modification du kraken :
 
+création de la route /kraken/{krakenID}
+commit- m "création de la route /kraken/{krakenId}"
+
 
 
 
