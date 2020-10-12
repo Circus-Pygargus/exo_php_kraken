@@ -39,7 +39,7 @@ class Database extends DatabaseConfig
 
     protected function execute (): bool
     {
-        return $this->sth->execute;
+        return $this->sth->execute();
     }
 
 

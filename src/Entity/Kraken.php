@@ -178,17 +178,15 @@ class Kraken extends Database
      * 
      * @return bool
      */
-    public function add (string $name, int $age, int $height, int $weight, string $tentacles, string $powers): bool
+    public function add (string $name, int $age, int $height, int $weight): bool
     {
-        $sql = "INSERT INTO kraken(name, age, height, weight, tentacles, powers)
-                VALUES (:name, :age, :height, :weight, :tentacles, :powers)";
+        $sql = "INSERT INTO kraken(name, age, height, weight)
+                VALUES (:name, :age, :height, :weight)";
         $this->prepare($sql);
         $this->bindParam(':name', $name, \PDO::PARAM_STR);
         $this->bindParam(':age', $age, \PDO::PARAM_INT);
         $this->bindParam(':height', $height, \PDO::PARAM_INT);
         $this->bindParam(':weight', $weight, \PDO::PARAM_INT);
-        $this->bindParam(':tentacles', $tentacles, \PDO::PARAM_STR);
-        $this->bindParam(':powers', $powers, \PDO::PARAM_STR);
         return $this->execute();
     }
 
@@ -222,41 +220,5 @@ class Kraken extends Database
         $this->prepare($sql);
         $this->execute();
         return $this->fetchAll();
-    }
-
-
-    /**
-     * Update tentacles form a kraken
-     * 
-     * @param int $id
-     * @param string $tentacles
-     * 
-     * @return void
-     */
-    public function editTentacles ($id, $tentacles): void
-    {
-        $sql = "UPDATE kraken SET tentacles=:tentacles WHERE id=:id";
-        $this->prepare($sql);
-        $this->bindParam(':id', $id, \PDO::PARAM_INT);
-        $this->bindParam(':tentacles', $tentacles, \PDO::PARAM_STR);
-        $this->execute();
-    }
-
-
-    /**
-     * Update powers form a kraken
-     * 
-     * @param int $id
-     * @param string $powers
-     * 
-     * @return void
-     */
-    public function editPowers ($id, $powers): void
-    {
-        $sql = "UPDATE kraken SET powers=:powers WHERE id=:id";
-        $this->prepare($sql);
-        $this->bindParam(':id', $id, \PDO::PARAM_INT);
-        $this->bindParam(':powers', $powers, \PDO::PARAM_STR);
-        $this->execute();
     }
 }
