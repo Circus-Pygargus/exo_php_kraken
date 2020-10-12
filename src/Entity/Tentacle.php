@@ -33,7 +33,7 @@ class Tentacle extends Database
     /**
      * @var int
      */
-    private $force;
+    private $forcee;
 
     /**
      * @var int
@@ -148,25 +148,25 @@ class Tentacle extends Database
 
 
     /**
-     * Get the value of force
+     * Get the value of forcee
      * 
      * @return int
      */
-    public function getForce (): int
+    public function getforcee (): int
     {
-        return $this->force;
+        return $this->forcee;
     }
 
     /**
-     * Set the value of force
+     * Set the value of forcee
      * 
-     * @param int $force
+     * @param int $forcee
      * 
      * @return self
      */
-    public function setForce (int $force): self
+    public function setforcee (int $forcee): self
     {
-        $this->force = $force;
+        $this->forcee = $forcee;
         return $this;
     }
 
@@ -228,21 +228,21 @@ class Tentacle extends Database
      * @param int $krakenId
      * @param string $name
      * @param int $lifePoints
-     * @param int $force
+     * @param int $forcee
      * @param int $dexterity
      * @param int $constitution
      * 
      * @return bool
      */
-    public function add (int $krakenId, string $name, int $lifePoints, int $force, int $dexterity, int $constitution): bool
+    public function add (int $krakenId, string $name, int $lifePoints, int $forcee, int $dexterity, int $constitution): bool
     {
-        $sql = "INSERT INTO tentacle(kraken_id,name, life_points, force, dexterity, constitution)
-                VALUES (:kraken_id, :name, :life_points, :force, :dexterity, :constitution";
+        $sql = "INSERT INTO tentacle(kraken_id,name, life_points, forcee, dexterity, constitution)
+                VALUES (:kraken_id, :name, :life_points, :forcee, :dexterity, :constitution";
         $this->prepare($sql);
         $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
         $this->bindParam(':name', $name, \PDO::PARAM_STR);
         $this->bindParam(':life_points', $lifePoints, \PDO::PARAM_INT);
-        $this->bindParam(':force', $force, \PDO::PARAM_INT);
+        $this->bindParam(':forcee', $forcee, \PDO::PARAM_INT);
         $this->bindParam(':dexterity', $dexterity, \PDO::PARAM_INT);
         $this->bindParam(':constitution', $constitution, \PDO::PARAM_INT);
         return $this->execute();

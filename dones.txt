@@ -64,6 +64,7 @@ modif tentacle.php puis commit -m "modif entité Tentacle"
     - /src/Entity/KrakenPower.php -> commit -m "création entité krakenPower"
 modif Power.php (ajout méthode getAll qui servira à savoir si la base de données a été correctement créée) -> commit -m "modif entité Power _ ajout méthode getAll()"
 modif entité Kraken -> commit -m "modif entité Kraken"
+modif entité tentacle -> commit -m "modif entité Tentacle"
 
 
 
