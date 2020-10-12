@@ -77,6 +77,10 @@ commit -m "déplacement index.php vers /publilc"
 
 commit -m "déplacement .htaccess vers /public"
 
+ajout de la route /kraken/new dans index.php
+ajout gestion de la route /kraken/new dans KrakenController.php
+commit -m "ajout et gestion de la route /kraken/new"
+
 
 
 
