@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  localhost:3306
--- Généré le :  Lun 12 Octobre 2020 à 11:53
+-- Généré le :  Lun 12 Octobre 2020 à 20:51
 -- Version du serveur :  10.3.25-MariaDB-1:10.3.25+maria~bionic-log
 -- Version de PHP :  7.4.11
 
@@ -27,7 +27,11 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `kraken` (
-  `id` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `age` int(11) NOT NULL,
+  `height` int(11) NOT NULL,
+  `weight` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
@@ -121,7 +125,7 @@ ALTER TABLE `tentacle`
 -- AUTO_INCREMENT pour la table `kraken`
 --
 ALTER TABLE `kraken`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `kraken_power`
 --

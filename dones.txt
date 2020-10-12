@@ -103,6 +103,9 @@ commit -m "ajout gestion back de la route /kraken/create"
 création du fichier /public/js/krane-create.js
 commit -m "ajout gestion front /kraken/create"
 
+modif dans fichier kraken.sql (manquait le contenu de la table kraken ...)
+commit -m "finition mise en place bdd"
+
 
 
 
