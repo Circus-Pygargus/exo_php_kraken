@@ -87,6 +87,15 @@ commit -m "ajout bootstrap"
 création du formulaire de nouveau kraken dans /templates/kraken_new/index.html
 commit -m "création formulaire nouveau kraken"
 
+ajout de la route /kraken/create
+commit -m "ajout route "/kraken/create"
+
+création du fichier /public/js/krane-create.js
+création de la méthode KrakenController->create()
+modif du chemin pour DotEnv dans DatabaseConfig.php (ajout de .'/..' pour sortit de /public car il va chercher dans $_SERVER["DOCUMENT_ROOT"] et ce dernier à changé depuis le déplacement vers /public)
+modif de Kraken.php : j'avais oublié les anciennes propriétés tentacles et powers dans les requêtes sql o_O
+pire : correction dans Database.php $this->execute();  il manquait les () !!!!!
+commit -m "création et gestion de la route /kraken/create"
 
 
 

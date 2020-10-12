@@ -15,6 +15,8 @@ $router = new AltoRouter();
 $router->map('GET', '/', array('c' => 'KrakenController', 'a' => 'index'));
 // user would like to add a new kraken (will display kraken creation form)
 $router->map('GET', '/kraken/new', array('c' => 'KrakenController', 'a' => 'new'));
+// user is trying to create a new kraken
+$router->map('POST', '/kraken/create', array('c' => 'KrakenController', 'a' => 'create'));
 
 
 
