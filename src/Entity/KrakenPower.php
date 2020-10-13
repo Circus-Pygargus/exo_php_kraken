@@ -119,4 +119,24 @@ class KrakenPower extends Database
         $this->bindParam(':power_id', $powerId, \PDO::PARAM_INT);
         return $this->execute();
     }
+
+
+    /**
+     * Get all power's names of a kraken
+     * 
+     * @param int $id
+     * 
+     * @return array
+     */
+    public function getAllPowersNamesByKrakenId ($id): array
+    {
+        $sql = "SELECT name FROM power
+                LEFT JOIN kraken_power ON kraken_power.kraken_id=:id
+                WHERE power.id=kraken_power.power_id";
+        $this->prepare($sql);
+        $this->bindParam(':id', $id, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetchAll();
+    }
 }

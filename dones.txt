@@ -145,6 +145,9 @@ git commit -m " ajout de la méthode getAllInfosById($id) dans Kraken.php"
 Ajout de la méthode getAllbyKrakenId dans Tentacle.php
 commit -m "ajout de la méthode getAllbyKrakenId dans Tentacle.php"
 
+Ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php
+commit -m "ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php"
+
 
 
 
