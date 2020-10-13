@@ -160,6 +160,12 @@ commit -m "ajout requêtes bdd dans controller page info"
 ajout html formulaire d'ajout de tentacule dans /template/kraken/infos.html.twig
 commit -m 'ajout html formulaire création tentacule"
 
+création du fichier /Controller/TentacleController.php
+création de la méthode create() pour gérer la requête http de création de tentacule
+commit -m "gajout gestion requête /tentacle back-end"
+
+
+
 
 
 
