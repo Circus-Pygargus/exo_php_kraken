@@ -149,7 +149,10 @@ Ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php
 commit -m "ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php"
 
 ajout redirection vers page info si enregistrement de nouveau kraken ok dans kraken-create.js
-commit -m "ajout redirection vers page info si enregistrement nouveau kraken ok" 
+commit -m "ajout redirection vers page info si enregistrement nouveau kraken ok"
+
+modif de getAllPowersNamesByKrakenId() dans KrakenPower.php en getAllPowersByKrakenId() pour récupérer d'autres infos que juste les noms des pouvoirs
+commit -m "modif getAllPowersNamesByKrakenId() en getAllPowersByKrakenId() dans KrakenPower.php"
 
 
 

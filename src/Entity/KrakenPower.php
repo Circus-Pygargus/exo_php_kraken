@@ -128,9 +128,9 @@ class KrakenPower extends Database
      * 
      * @return array
      */
-    public function getAllPowersNamesByKrakenId ($id): array
+    public function getAllPowersByKrakenId ($id): array
     {
-        $sql = "SELECT name FROM power
+        $sql = "SELECT * FROM power
                 LEFT JOIN kraken_power ON kraken_power.kraken_id=:id
                 WHERE power.id=kraken_power.power_id";
         $this->prepare($sql);
