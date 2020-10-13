@@ -157,7 +157,8 @@ commit -m "modif getAllPowersNamesByKrakenId() en getAllPowersByKrakenId() dans 
 ajout requêtes bdd à infos($krakenId) dans KrakenController.php
 commit -m "ajout requêtes bdd dans controller page info"
 
-
+ajout html formulaire d'ajout de tentacule dans /template/kraken/infos.html.twig
+commit -m 'ajout html formulaire création tentacule"
 
 
 
