@@ -1,0 +1,24 @@
+{% for tentacle in tentacles %}
+    <div class="tentacle">
+    <div class="row">
+        <div class="col-4">Nom :</div>
+        <div class="col">{{ tentacle.name }}</div>
+    </div>
+    <div class="row">
+        <div class="col-4">Points de vie :</div>
+        <div class="col">{{ tentacle.lifePoints }}</div>
+    </div>
+    <div class="row">
+        <div class="col-4">Force :</div>
+        <div class="col">{{ tentacle.forcee }}</div>
+    </div>
+    <div class="row">
+        <div class="col-4">Dextérité :</div>
+        <div class="col">{{ tentacle.dexterity }}</div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-4">Constitution :</div>
+        <div class="col">{{ tentacle.constitution }}</div>
+    </div>
+    </div>
+{% endfor %} 

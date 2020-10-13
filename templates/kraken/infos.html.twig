@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    <title>Kraken Infos et Modifs</title>
+{% endblock %}
+
+
+{% block header %}
+    <h1 class="mt-5 mb-3 text-center">KRAKENs</h1>
+    <nav>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <a class="btn btn-secondary btn-block mb-3" href="/">Voir tous les krakens</a>
+                    </div>
+                    <div class="col">
+                        <a class="btn btn-secondary btn-block mb-3" href="/kraken/new">Créer un nouveau kraken</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <H2 class="m-4 text-center">{{ kraken.name }}</h2>
+{% endblock %}
+
+
+{% block main %}
+    <main class="container">
+        <div class="container-fluid">
+            <div class="row">
+                {# Première colonne : modifications du kraken #}
+                <div class="col">
+                    <div class="container">
+                        <div class="row mb-3">
+                            <button id="tentacle-add-btn" class="btn btn-secondary btn-block mb-3" {% if tentacles|length == 8 %}disabled{% endif %}>Ajouter un tentacule</button>
+                            <button id="tentacle-remove-btn" class="btn btn-secondary btn-block mb-3"  {% if tentacles|length == 0 %}disabled{% endif %}>Supprimer un tentacule</button>
+                            <div id="tentacles-list">
+                                {% embed "partial/tentacles-delete.html.twig" with { tentacles : tentacles } %}{% endembed %}
+                            </div>
+                            <div id="powers-list">
+                                {% embed "partial/powers-delete.html.twig" with { powers : powers } %}{% endembed %}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <button id="power-add-btn" class="btn btn-secondary btn-block mb-3">Ajouter un pouvoir</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                {# Deuxième colonne : informations du kraken #}
+                <div class="col">
+                    <div class="row">
+                        <div class="col-3">Age :</div>
+                        <div class="col-9">{{ kraken.age }} ans</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Taille :</div>
+                        <div class="col-9">{{ kraken.height }} mètre{% if kraken.height > 1 %}s{% endif %}</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">Poids :</div>
+                        <div class="col-9">{{ kraken.weight }} tonne{% if kraken.weight > 1 %}s{% endif %}</div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-3">Tentacules :</div>
+                        <div class="col-9" id="tentacles-infos">
+                            <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
+                            {% embed "partial/tentacles-infos.html.twig" with { tentacles : tentacles } %}{% endembed %}
+                        </div>
+                    </div>
+                    <div class="row mt-1">
+                        <div class="col-3">Pouvoirs :</div>
+                        <div class="col-9" id="powers-infos">
+                            <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
+                            {% embed "partial/powers-infos.html.twig" with { powers : powers } %}{% endembed %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}

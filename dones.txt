@@ -123,6 +123,15 @@ commit -m "backend : création méthode pour gestion de la route /kraken/{kraken
 correction coquille gestion params d'url dans index.php
 commit -m "correction coquille gestion url params" 
 
+création du template /kraken/infos.html.twig
+création du template partiel /templates/partial/powers-infos.html.twig
+création du template partiel /templates/partial/tentacles-infos.html.twig
+création du template partiel /templates/partial/powers-add.html.twig
+création du template partiel /templates/partial/powers-delete.html.twig
+création du template partiel /templates/partial/tentacles-delete.html.twig
+commit -m "création du template d'infos d'un kraken"
+
+
 
 
 
