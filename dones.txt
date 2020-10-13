@@ -170,8 +170,14 @@ commit -m "ajout route /tentacle en POST"
 ajout de krakenId en data du formulaire de création de tentacule en html
 commit -m "ajout html : data-kraken-id au form création tentacule"
 
-chache le formulaire de création de tentacule
+cache le formulaire de création de tentacule
 commit -m "cache le formulaire de création de tentacule"
+
+création du fichier /public/js/display-management.js
+création du fichier /public/js/tentacle-create.js
+création du fichier /public/js/tentacle-delete.js
+création du fichier /public/js/power-add.js
+commit -m "création des fichiers nécessaires à la page d'info de kraken"
 
 
 
