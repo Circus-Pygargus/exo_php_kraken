@@ -154,7 +154,8 @@ commit -m "ajout redirection vers page info si enregistrement nouveau kraken ok"
 modif de getAllPowersNamesByKrakenId() dans KrakenPower.php en getAllPowersByKrakenId() pour récupérer d'autres infos que juste les noms des pouvoirs
 commit -m "modif getAllPowersNamesByKrakenId() en getAllPowersByKrakenId() dans KrakenPower.php"
 
-
+ajout requêtes bdd à infos($krakenId) dans KrakenController.php
+commit -m "ajout requêtes bdd dans controller page info"
 
 
 

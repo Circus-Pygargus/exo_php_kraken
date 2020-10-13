@@ -6,6 +6,8 @@ namespace App\Controller;
 use App\Application\Controller;
 
 use App\Entity\Kraken;
+use App\Entity\Tentacle;
+use App\Entity\KrakenPower;
 
 
 class KrakenController extends Controller
@@ -74,9 +76,11 @@ class KrakenController extends Controller
                     );
                 }
                 else {
+                    $krakenId = $krakenModel->getIdByName($name);
                     $response = array(
-                        'reponse' => 'ok',
-                        'message' => 'Kraken enregistré !'
+                        'response' => 'ok',
+                        'message' => 'Kraken enregistré !',
+                        'krakenId' => $krakenId["id"]
                     );
                 }
             }
@@ -92,6 +96,21 @@ class KrakenController extends Controller
      */
     public function infos ($krakenId)
     {
-        return $this->twig->render('kraken/infos.html.twig');
+        $id = (int)$krakenId["krakenId"];
+
+        $krakenModel = new Kraken();
+        $kraken = $krakenModel->getOneById($id);
+
+        $tentacleModel = new Tentacle();
+        $tentacles = $tentacleModel->getAllbyKrakenId($id);
+
+        $krakenPowerModel = new KrakenPower();
+        $powers = $krakenPowerModel->getAllPowersByKrakenId($id);
+
+        return $this->twig->render('kraken/infos.html.twig', [
+            "kraken" => $kraken,
+            "tentacles" => $tentacles,
+            "powers" => $powers
+        ]);
     }
 }
