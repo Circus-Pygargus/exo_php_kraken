@@ -22,6 +22,8 @@ $router->map('POST', '/kraken/create', array('c' => 'KrakenController', 'a' => '
 $router->addMatchTypes(array('krakenId' => '[0-9]{1,5}'));
 $router->map('GET', '/kraken/[i:krakenId]', array('c' => 'KrakenController', 'a' => 'infos'));
 
+//user wants to create a tentacle
+$router->map('POST', '/tentacle', array('c' => 'TentacleController', 'a' => 'create'));
 
 
 

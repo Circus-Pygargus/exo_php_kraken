@@ -164,6 +164,9 @@ création du fichier /Controller/TentacleController.php
 création de la méthode create() pour gérer la requête http de création de tentacule
 commit -m "gajout gestion requête /tentacle back-end"
 
+création de la route /tentacle en POST dans index.php
+commit -m "ajout route /tentacle en POST"
+
 
 
 
