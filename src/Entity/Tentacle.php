@@ -283,4 +283,22 @@ class Tentacle extends Database
 
         return $this->fetch(); 
     }
+
+
+    /**
+     * Get all tentacle corresponding to kraken id
+     * 
+     * @param int $krakenId
+     * 
+     * @return array
+     */
+    public function getAllbyKrakenId ($krakenId): array
+    {
+        $sql = "SELECT * FROM tentacle WHERE kraken_id=:kraken_id";
+        $this->prepare($sql);
+        $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetchAll();
+    }
 }
