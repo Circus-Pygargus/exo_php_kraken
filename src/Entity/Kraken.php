@@ -192,6 +192,25 @@ class Kraken extends Database
 
 
     /**
+     * Get one kraken by id
+     * 
+     * @param int $id
+     * 
+     * @return array
+     */
+    public function getOneById ($id): array
+    {
+        $sql = "SELECT * FROM kraken WHERE id=:id";
+        
+        $this->prepare($sql);
+        $this->bindParam(':id', $id, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetch();
+    }
+
+
+    /**
      * Get a kraken id by name
      * 
      * @param string $name

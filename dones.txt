@@ -134,6 +134,9 @@ commit -m "création du template d'infos d'un kraken"
 correction infos.html.twig : gestion du pluriel de l'age du kraken
 commit -m "correction : gestion du pluriel si kraken.age > 0"
 
+Ajout méthode getOneById dans Kraken.php
+commit -m "ajout méthode getOneById dans Kraken.php"
+
 
 
 
