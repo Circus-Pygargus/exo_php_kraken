@@ -170,6 +170,9 @@ commit -m "ajout route /tentacle en POST"
 ajout de krakenId en data du formulaire de création de tentacule en html
 commit -m "ajout html : data-kraken-id au form création tentacule"
 
+chache le formulaire de création de tentacule
+commit -m "cache le formulaire de création de tentacule"
+
 
 
 
