@@ -34,6 +34,7 @@ newKrakenForm.addEventListener('submit', (e) => {
         else {
             // A modifier pour redirection vers la page de gestion d'un kraken
             responseDiv.innerHTML = response.message;
+            window.location = "/kraken/" + response.krakenId;
         }
     })
 });

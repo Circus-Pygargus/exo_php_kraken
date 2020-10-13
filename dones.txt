@@ -148,6 +148,9 @@ commit -m "ajout de la méthode getAllbyKrakenId dans Tentacle.php"
 Ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php
 commit -m "ajout de la méthode getAllPowersNamesByKrakenId() dans KrakenPower.php"
 
+ajout redirection vers page info si enregistrement de nouveau kraken ok dans kraken-create.js
+commit -m "ajout redirection vers page info si enregistrement nouveau kraken ok" 
+
 
 
 
