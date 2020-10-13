@@ -211,6 +211,27 @@ class Kraken extends Database
 
 
     /**
+     * 
+     * Get all kraken infos by id
+     * 
+     * @param int $id
+     * 
+     * @return array
+     */
+    public function getAllInfosById ($id): array
+    {
+        $sql = "SELECT * FROM kraken
+                LEFT JOIN tentacle ON kraken.id=tentacle.kraken_id
+                WHERE kraken_id=:id";
+        $this->prepare($sql);
+        $this->bindParam(':id', $id, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetchAll();
+    }
+
+
+    /**
      * Get a kraken id by name
      * 
      * @param string $name

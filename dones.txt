@@ -137,6 +137,13 @@ commit -m "correction : gestion du pluriel si kraken.age > 0"
 Ajout méthode getOneById dans Kraken.php
 commit -m "ajout méthode getOneById dans Kraken.php"
 
+Ajout de la méthode getAllbyKrakenId dans Tentacle.php
+commit -m "ajout de la méthode getAllbyKrakenId dans Tentacle.php"
+
+ajout de la méthode getAllInfosById($id) dans Kraken.php
+j'y récupère les infos du kraken + les infos de ses tentacules
+mais ça ne sera pas utilisable car les infos du kraken et des tentacules se cumulent dans le même array sans différenciations ...
+git commit -m " ajout de la méthode getAllInfosById($id) dans Kraken.php"
 
 
 
