@@ -64,11 +64,10 @@ CREATE TABLE `power` (
 INSERT INTO `power` (`id`, `name`) VALUES
 (1, 'Blast'),
 (2, 'Plague'),
-(3, 'Plague'),
-(4, 'Mind control'),
-(5, 'Ink fog'),
-(6, 'Force shield'),
-(7, 'Regeneration');
+(3, 'Mind control'),
+(4, 'Ink fog'),
+(5, 'Force shield'),
+(6, 'Regeneration');
 
 -- --------------------------------------------------------
 

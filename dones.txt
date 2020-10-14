@@ -194,9 +194,8 @@ commit -m "ajout formulaire suppression pouvoir"
 ajout gestion d'affichage du formulaire demandé qd appui sur le bouton correspondant : remet couleur par defaut au bouton sélectionné (si présent), nettoye et cache l'éventuel formulaire affiché, met en couleur le bouton préssé et affiche le bon formulaire
 commit -m "ajout gestion d'affichage des formulaires de modification du kraken"
 
-
-
-
+modif bdd table power : plague en bouble o_O
+commit -m "modif BDD le pouvoir plague était en double"
 
 
 A FAIRE :
