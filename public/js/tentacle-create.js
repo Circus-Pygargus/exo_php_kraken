@@ -8,7 +8,7 @@ const tentacleConstitutionInput = document.querySelector('#tentacle-constitution
 
 // places to display infos
 const tentacleInfosDiv = document.querySelector('#tentacles-infos');
-console.log(tentacleInfosDiv);
+
 
 tentacleCreateForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -39,6 +39,7 @@ tentacleCreateForm.addEventListener('submit', (e) => {
         else {
             tentacleInfosDiv.innerHTML = response.tentacleHtml;
             cleanAndHideForm();
+            unenlightBtns();
             manageBtnsActivation();
         }
     })

@@ -218,6 +218,9 @@ commit -m "ajout gestion front-end pour la route /tentacle"
 ajout nettoyage et cache formulaire création tentacule après enregistrement réussi
 commit -m "ajout nettoyage formulaire création tentacule après enregistrement réussi"
 
+ajout redonne la couleur d'origine au bouton 'Ajouter un tentacule' après enregistrement réussi
+commit -m "Ajout redonne couleur d'origine au bouton d'affichage du form après enregistrement réussi"
+
 
 
 
