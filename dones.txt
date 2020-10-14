@@ -197,10 +197,8 @@ commit -m "ajout gestion d'affichage des formulaires de modification du kraken"
 modif bdd table power : plague en bouble o_O
 commit -m "modif BDD le pouvoir plague était en double"
 
-
-A FAIRE :
-
-ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir :powers pour les possibles et krakenPowers pour ceux qu'il a
+ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir : powers pour les possibles et krakenPowers pour ceux qu'il a
+commit -m "ajout différenciation entre les pouvoirs du kraken et les pouvoirs disponibles"
 
 
 

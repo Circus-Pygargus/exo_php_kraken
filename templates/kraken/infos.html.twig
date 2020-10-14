@@ -73,13 +73,13 @@
                             </form>
                         </div>
                         <div id="tentacle-remove-div" class="row d-none">
-                            {% embed "/partial/tentacles-delete.html.twig" with { tentacles : tentacles } %}{% endembed %}
+                            {% embed "/partial/tentacles-delete.html.twig" %}{% endembed %}
                         </div>
                         <div id="power-add-div" class="row d-none">
-                            {% embed "partial/powers-add.html.twig" with { powers : powers} %}{% endembed %}
+                            {% embed "partial/powers-add.html.twig" %}{% endembed %}
                         </div>
                         <div id="power-remove-div" class="row d-none">
-                            {% embed "partial/powers-delete.html.twig" with { powers : powers } %}{% endembed %}
+                            {% embed "partial/powers-delete.html.twig" %}{% endembed %}
                         </div>
                     </div>
                 </div>
@@ -104,14 +104,14 @@
                         <div class="col-3">Tentacules :</div>
                         <div class="col-9" id="tentacles-infos">
                             <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
-                            {% embed "partial/tentacles-infos.html.twig" with { tentacles : tentacles } %}{% endembed %}
+                            {% embed "partial/tentacles-infos.html.twig" %}{% endembed %}
                         </div>
                     </div>
                     <div class="row mt-1">
                         <div class="col-3">Pouvoirs :</div>
                         <div class="col-9" id="powers-infos">
                             <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
-                            {% embed "partial/powers-infos.html.twig" with { powers : powers } %}{% endembed %}
+                            {% embed "partial/powers-infos.html.twig" %}{% endembed %}
                         </div>
                     </div>
                 </div>

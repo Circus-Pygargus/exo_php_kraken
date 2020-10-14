@@ -4,7 +4,7 @@
         <label for="power-remove-select">Pouvoir à supprimer :</label>
         <select type="text" class="form-control" id="power-remove-select" name="kraken-power-id" required>
             <option value="" selected>Choisis un pouvoir</option>
-            {% for power in powers %}
+            {% for power in krakenPowers %}
                 <option value="{{ power.id }}">{{ power.name }}</option>
             {% endfor %}
         </select>

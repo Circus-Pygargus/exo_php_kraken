@@ -8,6 +8,7 @@ use App\Application\Controller;
 use App\Entity\Kraken;
 use App\Entity\Tentacle;
 use App\Entity\KrakenPower;
+use App\Entity\Power;
 
 
 class KrakenController extends Controller
@@ -105,12 +106,42 @@ class KrakenController extends Controller
         $tentacles = $tentacleModel->getAllbyKrakenId($id);
 
         $krakenPowerModel = new KrakenPower();
-        $powers = $krakenPowerModel->getAllPowersByKrakenId($id);
+        $krakenPowers = $krakenPowerModel->getAllPowersByKrakenId($id);
+
+        $powerModel = new Power();
+        $allPowers = $powerModel->getAll();
+        $availablePowers = $this->getAvailablePowers($allPowers, $krakenPowers);
 
         return $this->twig->render('kraken/infos.html.twig', [
             "kraken" => $kraken,
             "tentacles" => $tentacles,
-            "powers" => $powers
+            "krakenPowers" => $krakenPowers,
+            "availablePowers" => $availablePowers
         ]);
+    }
+
+
+    /**
+     * Get available powers for a kraken
+     * 
+     * @param array $allPowers All existing powers
+     * @param array $krakenPowers The kraken powers
+     * 
+     * @return array
+     */
+    private function getAvailablePowers ($allPowers, $krakenPowers): array
+    {
+        $availablePowers = [];
+
+        foreach ($allPowers as $possiblePower) {
+            $powerSeen = false;
+            foreach ($krakenPowers as $krakenPower) {
+                if ($possiblePower["id"] === $krakenPower["power_id"]) $powerSeen = true;
+            }
+
+            if (!$powerSeen) array_push($availablePowers, $possiblePower);
+        }
+
+        return $availablePowers;
     }
 }
