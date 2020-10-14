@@ -10,7 +10,7 @@ use App\Entity\Tentacle as TentacleModel;
 use App\Entity\KrakenPower;
 
 
-class Tentacle extends Controller
+class TentacleController extends Controller
 {
     /**
      * Route '/tentacle/
@@ -24,7 +24,7 @@ class Tentacle extends Controller
 
         if ($contentType === 'Application/json') {
             // get and decode new tentacle form content
-            $content = trim(file_get_contents("php://php"));
+            $content = trim(file_get_contents("php://input"));
             $decoded = json_decode($content, true);
             // get form content as variables
             extract($decoded);
@@ -32,14 +32,13 @@ class Tentacle extends Controller
             $error = [];
 
             !$krakenId ? $error["kraken-id"] = 'Il manque l\'ID du kraken' : $krakenId = (int) $krakenId;
-
             !$name ? $error["name"] = 'Il faut entrer un nom' : $name = htmlspecialchars($name);
 
             !$lifePoints ? $error["life-points"] = 'Il manque le nombre de points de vie du kraken' : $lifePoints = (int) $lifePoints;
 
             !$force ? $error["force"] = 'Il manque la force du kraken' : $force = (int) $force;
 
-            !$dextetity ? $error["dextetity"] = 'Il manque la dextérité du kraken' : $dextetity = (int) $dextetity;
+            !$dexterity ? $error["dexterity"] = 'Il manque la dextérité du kraken' : $dexterity = (int) $dexterity;
 
             !$constitution ? $error["constitution"] = 'Il manque la constitution du kraken' : $constitution = (int) $constitution;
 

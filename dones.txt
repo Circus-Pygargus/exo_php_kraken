@@ -209,6 +209,9 @@ commit -m "ajout gestion activation désactivation des boutons de modif du krake
 correction coquille Entity/Tentacle.php : il manquait une ) à la fin de la requête sql pour la création de tentacule
 commit -m "correction coquille : manquait un ) dans requête sql création tentacule"
 
+correction coquille /src/Controller/TentacleController.php : plusieurs erreurs dont mauvais nom du controller o_O, dextetity au lieu de dexterity, php://php au lieu de php://input
+commit -m "correction coquilles : plusieurs erreurs dans TentacleController"
+
 
 
 
