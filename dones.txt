@@ -203,6 +203,8 @@ commit -m "ajout différenciation entre les pouvoirs du kraken et les pouvoirs d
 correction coquille affichage nomre de points de vie des tentacules dans /template/partial/tentacle.html.twig : tentacle.life_points au lieu de tentacle.lifePoints
 commit -m "correction coquille affichage points de vie tentacule"
 
+ajout gestion activation désactivation des boutons de modif du kraken dans /public/js/display-management.js  fonction manageBtnsActivation()
+commit -m "ajout gestion activation désactivation des boutons de modif du kraken"
 
 
 

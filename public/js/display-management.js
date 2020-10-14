@@ -34,6 +34,7 @@ powerAddBtn.addEventListener('click', (e) => {
 
 
 /* ############# FUNCTIONS ############# */
+
 // manage buttons and form containers to display wanted form
 const manageDisplay = (btn, container) => {
     unenlightBtns();
@@ -85,3 +86,41 @@ const cleanAndHideForm = () => {
 const displayForm = (container) => {
     container.classList.remove('d-none');
 };
+
+
+
+// manage activation/deactivation of buttons according to kraken status
+/* 
+    RULES :
+    Kraken can have from 0 to 8 tentacles
+    Kraken can have 1 power without any tentacle, and then 1 power every 4 tentacles
+        so maximum powers number is 3
+*/
+const manageBtnsActivation = () => {
+    const tentaclesNb = document.querySelectorAll('.tentacle').length;
+    const powersNb = document.querySelectorAll('.power').length;
+    if (tentaclesNb === 0) {
+        tentacleAddBtn.disabled = false;
+        tentacleRemoveBtn.disabled = true;
+        powerAddBtn.disabled = powersNb === 0 ? false : true;
+    }
+    else if (tentaclesNb > 0 && tentaclesNb < 4) {
+        tentacleAddBtn.disabled = false;
+        tentacleRemoveBtn.disabled = false;
+        powerAddBtn.disabled = powersNb === 0 ? false : true;
+    }
+    else if (tentaclesNb > 4 && tentaclesNb < 8) {
+        tentacleAddBtn.disabled = false;
+        tentacleRemoveBtn.disabled = false;
+        powerAddBtn.disabled = powersNb < 2 ? false : true;
+    }
+    else if (tentaclesNb === 8) {
+        tentacleAddBtn.disabled = true;
+        tentacleRemoveBtn.disabled = false;
+        powerAddBtn.disabled = powersNb < 3 ? false : true;
+    }
+};
+
+
+
+manageBtnsActivation();
