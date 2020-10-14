@@ -206,6 +206,9 @@ commit -m "correction coquille affichage points de vie tentacule"
 ajout gestion activation désactivation des boutons de modif du kraken dans /public/js/display-management.js  fonction manageBtnsActivation()
 commit -m "ajout gestion activation désactivation des boutons de modif du kraken"
 
+correction coquille Entity/Tentacle.php : il manquait une ) à la fin de la requête sql pour la création de tentacule
+commit -m "correction coquille : manquait un ) dans requête sql création tentacule"
+
 
 
 

@@ -237,7 +237,7 @@ class Tentacle extends Database
     public function add (int $krakenId, string $name, int $lifePoints, int $forcee, int $dexterity, int $constitution): bool
     {
         $sql = "INSERT INTO tentacle(kraken_id,name, life_points, forcee, dexterity, constitution)
-                VALUES (:kraken_id, :name, :life_points, :forcee, :dexterity, :constitution";
+                VALUES (:kraken_id, :name, :life_points, :forcee, :dexterity, :constitution)";
         $this->prepare($sql);
         $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
         $this->bindParam(':name', $name, \PDO::PARAM_STR);
