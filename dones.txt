@@ -179,6 +179,25 @@ création du fichier /public/js/tentacle-delete.js
 création du fichier /public/js/power-add.js
 commit -m "création des fichiers nécessaires à la page d'info de kraken"
 
+modification de /template/kraken/infos.html.twig pour prise encharge des différents formulaires présents dans /templates/partial
+commit -m "modif HTML pour prise en charge des formulaires en vue partielle"
+
+
+
+
+A FAIRE :
+
+ajout formulaire de suppression de tentacule
+
+ajout formulaire d'ajout de pouvoir
+
+ajout du formulaire de suppression de pouvoir (ici pas de bouton pour l'afficher, il sera appelé après suppression de tentacule si nombre de tentacules insuffisant)
+
+ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir :powers pour les possibles et krakenPowers pour ceux qu'il a
+
+ajout gestion d'affichage du formulaire demandé qd appui sur le bouton correspondant : remet couleur par defaut au bouton sélectionné (si présent), nettoye et cache l'éventuel formulaire affiché, met en couleur le bouton préssé et affiche le bon formulaire
+commit -m "ajout gestion d'affichage des formulaires de modification du kraken"
+
 
 
 
