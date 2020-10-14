@@ -188,14 +188,15 @@ commit -m "ajout formulaire suppression de tentacule"
 ajout formulaire d'ajout de pouvoir
 commit -m "ajout formulaire ajout pouvoir"
 
+ajout du formulaire de suppression de pouvoir (ici pas de bouton pour l'afficher, il sera appelé après suppression de tentacule si nombre de tentacules insuffisant)
+commit -m "ajout formulaire suppression pouvoir"
+
 
 
 
 
 
 A FAIRE :
-
-ajout du formulaire de suppression de pouvoir (ici pas de bouton pour l'afficher, il sera appelé après suppression de tentacule si nombre de tentacules insuffisant)
 
 ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir :powers pour les possibles et krakenPowers pour ceux qu'il a
 

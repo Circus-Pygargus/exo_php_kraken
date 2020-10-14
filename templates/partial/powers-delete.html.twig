@@ -1,1 +1,14 @@
-{# créer ici le formulaire de suppression de pouvoir #}
+{# formulaire de suppression de pouvoir #}
+<form id="power-remove-form" data-kraken-id="{{ kraken.id }}" class="mb-3 w-100">
+    <div class="form-group">
+        <label for="power-remove-select">Pouvoir à supprimer :</label>
+        <select type="text" class="form-control" id="power-remove-select" name="kraken-power-id" required>
+            <option value="" selected>Choisis un pouvoir</option>
+            {% for power in powers %}
+                <option value="{{ power.id }}">{{ power.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Supprimer</button>
+    <button type="button" class="btn btn-primary" id="power-remove-close">Annuler</button>
+</form>
