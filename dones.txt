@@ -200,6 +200,8 @@ commit -m "modif BDD le pouvoir plague était en double"
 ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir : powers pour les possibles et krakenPowers pour ceux qu'il a
 commit -m "ajout différenciation entre les pouvoirs du kraken et les pouvoirs disponibles"
 
+correction coquille affichage nomre de points de vie des tentacules dans /template/partial/tentacle.html.twig : tentacle.life_points au lieu de tentacle.lifePoints
+commit -m "correction coquille affichage points de vie tentacule"
 
 
 
