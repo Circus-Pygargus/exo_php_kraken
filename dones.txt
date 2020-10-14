@@ -224,6 +224,9 @@ commit -m "Ajout redonne couleur d'origine au bouton d'affichage du form après 
 ajout renvoi liste tentacules pour formulaire de suppression de tentacule si enr"egistrement nouveau tentacule réussi
 commit -m "ajout renvoi liste tentacules pour formulaire de suppression de tentacule"
 
+ajout gestion du bouton d'annulation de création de tentacule dans tentacle-create.js
+commit -m "ajout gestion btn annulation création tentacule"
+
 
 
 
