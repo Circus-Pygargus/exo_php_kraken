@@ -1,1 +1,14 @@
-{# créer ici le formulaire de suppression de tentacule #}
+{# formulaire de suppression de tentacule #}                           
+<form id="tentacle-remove-form" data-kraken-id="{{ kraken.id }}" class="mb-3 w-100">
+    <div class="form-group">
+        <label for="tentacle-delete-select">Tentacule à supprimer :</label>
+        <select type="text" class="form-control" id="tentacle-delete-select" name="tentacle-id" required>
+            <option value="" selected>Choisis un tentacule</option>
+            {% for tentacle in tentacles %}
+                <option value="{{ tentacle.id }}">{{ tentacle.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Supprimer</button>
+    <button type="button" class="btn btn-primary" id="tentacle-delete-close">Annuler</button>
+</form>

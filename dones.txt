@@ -182,12 +182,15 @@ commit -m "création des fichiers nécessaires à la page d'info de kraken"
 modification de /template/kraken/infos.html.twig pour prise encharge des différents formulaires présents dans /templates/partial
 commit -m "modif HTML pour prise en charge des formulaires en vue partielle"
 
+ajout formulaire de suppression de tentacule
+commit -m "ajout formulaire suppression de tentacule"
+
+
+
 
 
 
 A FAIRE :
-
-ajout formulaire de suppression de tentacule
 
 ajout formulaire d'ajout de pouvoir
 
