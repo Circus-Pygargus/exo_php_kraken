@@ -185,14 +185,15 @@ commit -m "modif HTML pour prise en charge des formulaires en vue partielle"
 ajout formulaire de suppression de tentacule
 commit -m "ajout formulaire suppression de tentacule"
 
+ajout formulaire d'ajout de pouvoir
+commit -m "ajout formulaire ajout pouvoir"
+
 
 
 
 
 
 A FAIRE :
-
-ajout formulaire d'ajout de pouvoir
 
 ajout du formulaire de suppression de pouvoir (ici pas de bouton pour l'afficher, il sera appelé après suppression de tentacule si nombre de tentacules insuffisant)
 

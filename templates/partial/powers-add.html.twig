@@ -1,1 +1,14 @@
-{# créer ici le formulaire d'ajout de pouvoir #}
+{# formulaire d'ajout de pouvoir #}
+<form id="power-add-form" data-kraken-id="{{ kraken.id }}" class="mb-3 w-100">
+    <div class="form-group">
+        <label for="power-add-select">Pouvoir à ajouter :</label>
+        <select type="text" class="form-control" id="power-add-select" name="power-id" required>
+            <option value="" selected>Choisis un pouvoir</option>
+            {% for power in powers %}
+                <option value="{{ power.id }}">{{ power.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Ajouter</button>
+    <button type="button" class="btn btn-primary" id="power-add-close">Annuler</button>
+</form>
