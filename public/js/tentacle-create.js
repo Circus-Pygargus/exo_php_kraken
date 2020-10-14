@@ -38,6 +38,8 @@ tentacleCreateForm.addEventListener('submit', (e) => {
         }
         else {
             tentacleInfosDiv.innerHTML = response.tentacleHtml;
+            cleanAndHideForm();
+            manageBtnsActivation();
         }
     })
 });

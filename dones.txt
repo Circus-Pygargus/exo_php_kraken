@@ -215,6 +215,9 @@ commit -m "correction coquilles : plusieurs erreurs dans TentacleController"
 ajout gestion requête post pour la route  '/tentacle' dans /public/js/tentacle-create.js
 commit -m "ajout gestion front-end pour la route /tentacle"
 
+ajout nettoyage et cache formulaire création tentacule après enregistrement réussi
+commit -m "ajout nettoyage formulaire création tentacule après enregistrement réussi"
+
 
 
 
