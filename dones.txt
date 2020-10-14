@@ -221,6 +221,9 @@ commit -m "ajout nettoyage formulaire création tentacule après enregistrement 
 ajout redonne la couleur d'origine au bouton 'Ajouter un tentacule' après enregistrement réussi
 commit -m "Ajout redonne couleur d'origine au bouton d'affichage du form après enregistrement réussi"
 
+ajout renvoi liste tentacules pour formulaire de suppression de tentacule si enr"egistrement nouveau tentacule réussi
+commit -m "ajout renvoi liste tentacules pour formulaire de suppression de tentacule"
+
 
 
 

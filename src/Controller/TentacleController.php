@@ -67,10 +67,15 @@ class TentacleController extends Controller
                         "tentacles" => $tentacles
                     ]);
 
+                    $removableTentaclesHtml = $this->twig->render('partial/tentacles-delete.html.twig', [
+                        "tentacles" => $tentacles
+                    ]);
+
                     $response = array(
                         'response' => 'ok',
                         'message' => 'Tentacule enregistré',
-                        'tentacleHtml' => $tentacleHtml
+                        'tentacleHtml' => $tentacleHtml,
+                        'removableTentaclesHtml' => $removableTentaclesHtml
                     );
                 }
             }

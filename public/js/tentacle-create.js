@@ -6,8 +6,12 @@ const tentacleForceInput = document.querySelector('#tentacle-force');
 const tentacleDexterityInput = document.querySelector('#tentacle-dexterity');
 const tentacleConstitutionInput = document.querySelector('#tentacle-constitution');
 
-// places to display infos
+/* places to display infos */
+// in kraken infos place
 const tentacleInfosDiv = document.querySelector('#tentacles-infos');
+// in remove tentacle form
+// already declared in display-management.js
+// const tentacleRemoveDiv = document.querySelector('#tentacle-remove-div');
 
 
 tentacleCreateForm.addEventListener('submit', (e) => {
@@ -38,6 +42,7 @@ tentacleCreateForm.addEventListener('submit', (e) => {
         }
         else {
             tentacleInfosDiv.innerHTML = response.tentacleHtml;
+            tentacleRemoveDiv.innerHTML = response.removableTentaclesHtml;
             cleanAndHideForm();
             unenlightBtns();
             manageBtnsActivation();
