@@ -191,6 +191,9 @@ commit -m "ajout formulaire ajout pouvoir"
 ajout du formulaire de suppression de pouvoir (ici pas de bouton pour l'afficher, il sera appelé après suppression de tentacule si nombre de tentacules insuffisant)
 commit -m "ajout formulaire suppression pouvoir"
 
+ajout gestion d'affichage du formulaire demandé qd appui sur le bouton correspondant : remet couleur par defaut au bouton sélectionné (si présent), nettoye et cache l'éventuel formulaire affiché, met en couleur le bouton préssé et affiche le bon formulaire
+commit -m "ajout gestion d'affichage des formulaires de modification du kraken"
+
 
 
 
@@ -199,9 +202,6 @@ commit -m "ajout formulaire suppression pouvoir"
 A FAIRE :
 
 ajout différenciation entre les pouvoirs du kraken et les pouvoirs qu'il pourrait obtenir :powers pour les possibles et krakenPowers pour ceux qu'il a
-
-ajout gestion d'affichage du formulaire demandé qd appui sur le bouton correspondant : remet couleur par defaut au bouton sélectionné (si présent), nettoye et cache l'éventuel formulaire affiché, met en couleur le bouton préssé et affiche le bon formulaire
-commit -m "ajout gestion d'affichage des formulaires de modification du kraken"
 
 
 
