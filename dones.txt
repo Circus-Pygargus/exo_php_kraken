@@ -212,6 +212,9 @@ commit -m "correction coquille : manquait un ) dans requête sql création tenta
 correction coquille /src/Controller/TentacleController.php : plusieurs erreurs dont mauvais nom du controller o_O, dextetity au lieu de dexterity, php://php au lieu de php://input
 commit -m "correction coquilles : plusieurs erreurs dans TentacleController"
 
+ajout gestion requête post pour la route  '/tentacle' dans /public/js/tentacle-create.js
+commit -m "ajout gestion front-end pour la route /tentacle"
+
 
 
 
