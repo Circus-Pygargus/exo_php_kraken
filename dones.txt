@@ -227,6 +227,9 @@ commit -m "ajout renvoi liste tentacules pour formulaire de suppression de tenta
 ajout gestion du bouton d'annulation de création de tentacule dans tentacle-create.js
 commit -m "ajout gestion btn annulation création tentacule"
 
+création de la route '/tentacle/{tentacleId}' dans index.php
+commit -m "création de la route '/tentacle/{tentacleId}'"
+
 
 
 
