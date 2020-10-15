@@ -230,7 +230,9 @@ commit -m "ajout gestion btn annulation création tentacule"
 création de la route '/tentacle/{tentacleId}' dans index.php
 commit -m "création de la route '/tentacle/{tentacleId}'"
 
-
+modification de la requête http de la route '/tentacle/{tentacleId}' :
+avec un DELETE je ne peux avoir de body et donc je chope pas de response, et comme je veux renvoyer du html après effacement du tentacule, je bascule en POST
+commit -m "modif : requête en POST au lieu de DELETE pour la route '/tentacle/{tentacleId}'"
 
 
 
