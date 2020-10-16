@@ -240,6 +240,9 @@ commit -m "ajout delete($id) à l'entité Tentacle"
 remodif de la route de suppression de tentacule en /tentacle/delete en POST
 commit -m "modif : route suppression tentacule en /tentacle/delete"
 
+ajout gestion coté back end de la requête de suppression de tentacule
+commit -m "ajout gestion back-end de la requête de suppression de tentacule"
+
 
 
 
