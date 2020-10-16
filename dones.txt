@@ -243,6 +243,9 @@ commit -m "modif : route suppression tentacule en /tentacle/delete"
 ajout gestion coté back end de la requête de suppression de tentacule
 commit -m "ajout gestion back-end de la requête de suppression de tentacule"
 
+ajout gestion coté front end de la requête de suppression de tentacule
+commit -m "ajout gestion front-end de la requête de suppression de tentacule"
+
 
 
 

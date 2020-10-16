@@ -55,6 +55,7 @@ tentacleCreateForm.addEventListener('submit', (e) => {
             cleanAndHideForm();
             unenlightBtns();
             manageBtnsActivation();
+            watchTentacleForm();
         }
     })
 });
