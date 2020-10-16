@@ -301,4 +301,21 @@ class Tentacle extends Database
 
         return $this->fetchAll();
     }
+
+
+    /**
+     * Delete a tentacle
+     * 
+     * @param int $id the tentacle ID
+     * 
+     * @return bool
+     */
+    public function delete ($id): bool
+    {
+        $sql = "DELETE FROM tentacle WHERE id=:id";
+        $this->prepare($sql);
+        $this->bindParam(':id', $id, \PDO::PARAM_INT);
+
+        return $this->execute();
+    }
 }

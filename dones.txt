@@ -234,6 +234,9 @@ modification de la requête http de la route '/tentacle/{tentacleId}' :
 avec un DELETE je ne peux avoir de body et donc je chope pas de response, et comme je veux renvoyer du html après effacement du tentacule, je bascule en POST
 commit -m "modif : requête en POST au lieu de DELETE pour la route '/tentacle/{tentacleId}'"
 
+Ajout de la méthode delete($id) à l'entité Tentacle
+commit -m "ajout delete($id) à l'entité Tentacle"
+
 
 
 
