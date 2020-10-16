@@ -25,8 +25,7 @@ $router->map('GET', '/kraken/[i:krakenId]', array('c' => 'KrakenController', 'a'
 //user wants to create a tentacle
 $router->map('POST', '/tentacle', array('c' => 'TentacleController', 'a' => 'create'));
 // user wants to remove a tentacle
-$router->addMatchTypes(array('tentacleId' => '[0-9]{1,5}'));
-$router->map('POST', '/tentacle/[i:tentacleId]', array('c' => 'TentacleController', 'a' => 'delete'));
+$router->map('POST', '/tentacle/delete', array('c' => 'TentacleController', 'a' => 'delete'));
 
 
 

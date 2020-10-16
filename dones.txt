@@ -237,6 +237,8 @@ commit -m "modif : requête en POST au lieu de DELETE pour la route '/tentacle/{
 Ajout de la méthode delete($id) à l'entité Tentacle
 commit -m "ajout delete($id) à l'entité Tentacle"
 
+remodif de la route de suppression de tentacule en /tentacle/delete en POST
+commit -m "modif : route suppression tentacule en /tentacle/delete"
 
 
 
