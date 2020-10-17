@@ -30,6 +30,9 @@ $router->map('POST', '/tentacle/delete', array('c' => 'TentacleController', 'a' 
 // user wants to add a power
 $router->map('POST', '/power/add', array('c' => 'PowerController', 'a' => 'add'));
 
+// user wants to remove a power to the kraken
+$router->map('POST', '/power/remove', array('c' => 'PowerController', 'a' => 'remove'));
+
 
 
 $match = $router->match();

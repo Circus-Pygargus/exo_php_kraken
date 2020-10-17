@@ -273,6 +273,9 @@ commit -m "ajout comptage pouvoirs dans entité KrakenPower"
 ajout gestion route '/power/add' coté back
 commit -m "ajout gestion coté back de la route '/power/add'"
 
+création de la route '/power/remove' dans index.php
+commit -m "ajout de la route '/power/remove'"
+
 
 
 
