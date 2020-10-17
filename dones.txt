@@ -267,6 +267,9 @@ commit -m "ajout gestion coté front de la route '/power/add'"
 ajout méthode getTentaclesNb($krakenId) dans entity/Tentacle.php
 commit -m "ajout comptage tentacules dans entité Tentacle"
 
+ajout méthode getpowerssNb($krakenId) dans entity/KrakenPower.php
+commit -m "ajout comptage pouvoirs dans entité KrakenPower"
+
 
 
 

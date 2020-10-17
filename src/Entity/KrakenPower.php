@@ -112,8 +112,8 @@ class KrakenPower extends Database
      */
     public function add (int $krakenId, int $powerId): bool
     {
-        $sql = "INSERT INTO tentacle(kraken_id, power_id)
-                VALUES (:kraken_id, :power_id";
+        $sql = "INSERT INTO kraken_power(kraken_id, power_id)
+                VALUES (:kraken_id, :power_id)";
         $this->prepare($sql);
         $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
         $this->bindParam(':power_id', $powerId, \PDO::PARAM_INT);
@@ -138,5 +138,23 @@ class KrakenPower extends Database
         $this->execute();
 
         return $this->fetchAll();
+    }
+
+
+    /**
+     * Get the number of powers for a kraken
+     * 
+     * @param int $krakenId
+     * 
+     * @return array
+     */
+    public function getPowersNb ($krakenId): array
+    {
+        $sql = "SELECT COUNT(id) FROM kraken_power WHERE kraken_id=:kraken_id";
+        $this->prepare($sql);
+        $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetch();
     }
 }
