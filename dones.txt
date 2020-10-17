@@ -291,6 +291,9 @@ commit -m "ajout de la méthode rowCount() à la classe Database"
 ajout gestion route '/power/add' coté back
 commit -m "ajout gestion coté back de la route '/power/remove'"
 
+ajout gestion route '/power/add' coté front
+commit -m "ajout gestion coté front de la route '/power/remove'"
+
 
 
 
