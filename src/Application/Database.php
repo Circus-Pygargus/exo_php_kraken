@@ -53,4 +53,10 @@ class Database extends DatabaseConfig
     {
         return $this->sth->fetchAll(\PDO::FETCH_ASSOC);
     }
+    
+
+    protected function rowCount(): int
+    {
+        return $this->sth->rowCount();
+    }
 }

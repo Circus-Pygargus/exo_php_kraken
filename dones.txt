@@ -285,6 +285,8 @@ commit -m "correction : affichage du bon form si obligation suppression pouvoir"
 création de la méthode delete pour l'entité KrakenPower
 commit -m "création de la méthode delete pour l'entité KrakenPower"
 
+ajout de la méthode rowCount() à la classe Database
+git commit -m "ajout de la méthode rowCount() à la classe Database"
 
 
 
