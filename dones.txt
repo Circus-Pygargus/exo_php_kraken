@@ -261,6 +261,9 @@ commit -m "modif vérif nbr tentacules et de pouvoirs pour affichage du form sup
 création de la route '/power/add' dans index.php
 commit -m "ajout de la route '/power/add'"
 
+ajout gestion coté front de la route '/power/add'
+commit -m "ajout gestion coté front de la route '/power/add'"
+
 
 
 
