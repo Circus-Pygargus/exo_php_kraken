@@ -279,7 +279,8 @@ commit -m "ajout de la route '/power/remove'"
 correction orthographe tout ses pouvoirs -> tous, dans powers-delete.html.twig
 commit -m "correction orthographe dans formulaire suppression pouvoir"
 
-
+correction coquille dans display-management.js : le formulaire d'ajout de pouvoir s'affichait à la place de celui de suppression de pouvoir lorsque suppression obligatoire
+commit -m "correction : affichage du bon form si obligation suppression pouvoir"
 
 
 
