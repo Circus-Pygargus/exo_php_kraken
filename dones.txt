@@ -255,6 +255,9 @@ modification du formulaire de suppression de pouvoir:
 - retiré : le bouton d'annulation du form car ce form s'affiche quand cette action est obligatoire
 commit -m "modif formulaire suppression pouvoir"
 
+modif dans display-management.js manageBtnsActivation() pour affichage du formulaire de suppression de pouvoir selon le nbr de tentacules
+commit -m "modif vérif nbr tentacules et de pouvoirs pour affichage du form suprression pouvoir"
+
 
 
 

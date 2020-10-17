@@ -100,9 +100,17 @@ const manageBtnsActivation = () => {
     const tentaclesNb = document.querySelectorAll('.tentacle').length;
     const powersNb = document.querySelectorAll('.power').length;
     if (tentaclesNb === 0) {
-        tentacleAddBtn.disabled = false;
-        tentacleRemoveBtn.disabled = true;
-        powerAddBtn.disabled = powersNb === 0 ? false : true;
+        if (powersNb > 1) {
+            tentacleAddBtn.disabled = true;
+            tentacleRemoveBtn.disabled = true;
+            powerAddBtn.disabled = true;
+            powerAddDiv.classList.remove('d-none');
+        }
+        else {
+            tentacleAddBtn.disabled = false;
+            tentacleRemoveBtn.disabled = true;
+            powerAddBtn.disabled = powersNb === 0 ? false : true;
+        }
     }
     else if (tentaclesNb > 0 && tentaclesNb < 4) {
         tentacleAddBtn.disabled = false;
@@ -110,9 +118,17 @@ const manageBtnsActivation = () => {
         powerAddBtn.disabled = powersNb === 0 ? false : true;
     }
     else if (tentaclesNb >= 4 && tentaclesNb < 8) {
-        tentacleAddBtn.disabled = false;
-        tentacleRemoveBtn.disabled = false;
-        powerAddBtn.disabled = powersNb < 2 ? false : true;
+        if (powersNb > 2) {
+            tentacleAddBtn.disabled = true;
+            tentacleRemoveBtn.disabled = true;
+            powerAddBtn.disabled = true;
+            powerAddDiv.classList.remove('d-none');
+        }
+        else {
+            tentacleAddBtn.disabled = false;
+            tentacleRemoveBtn.disabled = false;
+            powerAddBtn.disabled = powersNb < 2 ? false : true;
+        }
     }
     else if (tentaclesNb === 8) {
         tentacleAddBtn.disabled = true;
