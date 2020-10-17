@@ -304,6 +304,24 @@ class Tentacle extends Database
 
 
     /**
+     * Get the number of tentacle for a kraken
+     * 
+     * @param int $krakenId
+     * 
+     * @return array
+     */
+    public function getTentaclesNb ($krakenId): array
+    {
+        $sql = "SELECT COUNT(id) FROM tentacle WHERE kraken_id=:kraken_id";
+        $this->prepare($sql);
+        $this->bindParam(':kraken_id', $krakenId, \PDO::PARAM_INT);
+        $this->execute();
+
+        return $this->fetch();
+    }
+
+
+    /**
      * Delete a tentacle
      * 
      * @param int $id the tentacle ID
