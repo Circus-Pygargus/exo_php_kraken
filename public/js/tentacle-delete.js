@@ -13,7 +13,6 @@ const watchTentacleForm = () => {
 
 
      tentacleCancelDeleteBtn.addEventListener('click', () => {
-         console.log('coucou')
              cleanAndHideForm();
              unenlightBtns();
          });
@@ -41,7 +40,6 @@ const watchTentacleForm = () => {
                  // TODO gérer les erreurs
              }
              else {
-                 console.log(response.tentacleHtml)
                  tentacleInfosDiv.innerHTML = response.tentacleHtml;
                  tentacleRemoveDiv.innerHTML = response.removableTentaclesHtml;
                  cleanAndHideForm();

@@ -294,6 +294,8 @@ commit -m "ajout gestion coté back de la route '/power/remove'"
 ajout gestion route '/power/add' coté front
 commit -m "ajout gestion coté front de la route '/power/remove'"
 
+nettoyage des console.log() oubliés
+commit -m "nettoyage des console.log() oubliés"
 
 
 

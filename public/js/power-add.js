@@ -41,7 +41,6 @@ const watchPowerAddForm = () => {
                 // todo gérer les erreurs
             }
             else {
-                console.table(response)
                 powerInfosDiv.innerHTML = response.powersHtml;
                 powerAddDiv.innerHTML = response.addablePowersHtml;
                 powerRemoveDiv.innerHTML = response.removablePowersHtml;
@@ -49,7 +48,7 @@ const watchPowerAddForm = () => {
                 unenlightBtns();
                 manageBtnsActivation();
                 watchPowerAddForm();
-                // watchPowerRemoveForm();
+                watchPowerRemoveForm();
             }
         })
     });
