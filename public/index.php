@@ -27,6 +27,9 @@ $router->map('POST', '/tentacle', array('c' => 'TentacleController', 'a' => 'cre
 // user wants to remove a tentacle
 $router->map('POST', '/tentacle/delete', array('c' => 'TentacleController', 'a' => 'delete'));
 
+// user wants to add a power
+$router->map('POST', '/power/add', array('c' => 'PowerController', 'a' => 'add'));
+
 
 
 $match = $router->match();
