@@ -157,4 +157,33 @@ class KrakenPower extends Database
 
         return $this->fetch();
     }
+
+
+    /**
+     * Delete a power for a kraken
+     * 
+     * @param int $krakenId The kraken ID
+     * @param int $powerId The power ID
+     * 
+     * @return bool
+     */
+    public function delete (int $id): bool
+    {
+        // first, check if the kraken has this poswer
+        $sql = "SELECT * FROM kraken_power WHERE id=:id";
+        $this->prepare($sql);
+        $this->bindParam(':id', $id, \PDO::PARAM_INT);
+        $this->execute();
+        $krakenPower = $this->fetchAll();
+
+        if (!$krakenPower) return false;
+        else {
+            $sql = "DELETE FROM kraken_power WHERE id=:id";
+            $this->prepare($sql);
+            $this->bindParam(':id', $id, \PDO::PARAM_INT); 
+            $this->execute();
+            
+            return $this->rowCount() === 1 ? true : false;
+        }
+    }
 }

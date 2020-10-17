@@ -282,6 +282,9 @@ commit -m "correction orthographe dans formulaire suppression pouvoir"
 correction coquille dans display-management.js : le formulaire d'ajout de pouvoir s'affichait à la place de celui de suppression de pouvoir lorsque suppression obligatoire
 commit -m "correction : affichage du bon form si obligation suppression pouvoir"
 
+création de la méthode delete pour l'entité KrakenPower
+commit -m "création de la méthode delete pour l'entité KrakenPower"
+
 
 
 
