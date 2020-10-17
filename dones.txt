@@ -250,6 +250,11 @@ correction coquille dans display-management.js manageBtnsActivation()
 tentaclesNb >= 4 au lieu de tentaclesNb > 4
 commit -m "correction coquille vérif nbr tentacules"
 
+modification du formulaire de suppression de pouvoir:
+- ajout d'une ligne d'explication
+- retiré : le bouton d'annulation du form car ce form s'affiche quand cette action est obligatoire
+commit -m "modif formulaire suppression pouvoir"
+
 
 
 
