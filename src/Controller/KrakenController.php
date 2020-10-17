@@ -15,8 +15,10 @@ class KrakenController extends Controller
 {
     /**
      * route '/'
+     * 
+     * @return string HTML
      */
-    public function index ()
+    public function index (): string
     {
         return $this->twig->render('index.html.twig');
     }
@@ -26,8 +28,10 @@ class KrakenController extends Controller
      * route '/kraken/new'
      * 
      * user wants to create a new kraken, send a kraken creation form
+     * 
+     * @return string HTML
      */
-    public function new ()
+    public function new (): string
     {
         return $this->twig->render('kraken/new.html.twig');
     }
@@ -94,8 +98,13 @@ class KrakenController extends Controller
      * route /kraken/krakenId
      * 
      * Display infos about requested kraken
+     * 
+     * param given by altoRouter, wanted param is in an array
+     * @param array
+     * 
+     * @return string HTML
      */
-    public function infos ($krakenId)
+    public function infos (array $krakenId): string
     {
         $id = (int)$krakenId["krakenId"];
 
@@ -129,7 +138,7 @@ class KrakenController extends Controller
      * 
      * @return array
      */
-    private function getAvailablePowers ($allPowers, $krakenPowers): array
+    private function getAvailablePowers (array $allPowers, array $krakenPowers): array
     {
         $availablePowers = [];
 

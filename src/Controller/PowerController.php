@@ -208,7 +208,7 @@ class PowerController extends Controller
      * 
      * @return array
      */
-    private function getAvailablePowers ($allPowers, $krakenPowers): array
+    private function getAvailablePowers (array $allPowers, array $krakenPowers): array
     {
         $availablePowers = [];
 

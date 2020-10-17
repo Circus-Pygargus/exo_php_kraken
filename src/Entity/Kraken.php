@@ -198,7 +198,7 @@ class Kraken extends Database
      * 
      * @return array
      */
-    public function getOneById ($id): array
+    public function getOneById (int $id): array
     {
         $sql = "SELECT * FROM kraken WHERE id=:id";
         
@@ -218,7 +218,7 @@ class Kraken extends Database
      * 
      * @return array
      */
-    public function getAllInfosById ($id): array
+    public function getAllInfosById (int $id): array
     {
         $sql = "SELECT * FROM kraken
                 LEFT JOIN tentacle ON kraken.id=tentacle.kraken_id
@@ -238,7 +238,7 @@ class Kraken extends Database
      * 
      * @return int kraken ID
      */
-    public function getIdByName (string $name)
+    public function getIdByName (string $name): array
         {
         $sql = "SELECT id FROM kraken WHERE name=:name";
         $this->prepare($sql);
@@ -259,6 +259,7 @@ class Kraken extends Database
         $sql = "SELECT * FROM kraken";
         $this->prepare($sql);
         $this->execute();
+        
         return $this->fetchAll();
     }
 }

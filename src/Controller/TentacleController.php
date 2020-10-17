@@ -5,9 +5,7 @@ namespace App\Controller;
 
 use App\Application\Controller;
 
-use App\Entity\Kraken;
 use App\Entity\Tentacle;
-use App\Entity\KrakenPower;
 
 
 class TentacleController extends Controller

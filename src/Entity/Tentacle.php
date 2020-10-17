@@ -256,7 +256,7 @@ class Tentacle extends Database
      * 
      * @return int tentacle ID
      */
-    public function getIdByName (string $name)
+    public function getIdByName (string $name): array
         {
         $sql = "SELECT id FROM tentacle WHERE name=:name";
         $this->prepare($sql);
@@ -274,7 +274,7 @@ class Tentacle extends Database
      * 
      * @return array
      */
-    public function getById ($id): array
+    public function getById (int $id): array
     {
         $sql = "SELECT * FROM tentacle WHERE id=:id";
         $this->prepare($sql);
@@ -292,7 +292,7 @@ class Tentacle extends Database
      * 
      * @return array
      */
-    public function getAllbyKrakenId ($krakenId): array
+    public function getAllbyKrakenId (int $krakenId): array
     {
         $sql = "SELECT * FROM tentacle WHERE kraken_id=:kraken_id";
         $this->prepare($sql);
@@ -310,7 +310,7 @@ class Tentacle extends Database
      * 
      * @return array
      */
-    public function getTentaclesNb ($krakenId): array
+    public function getTentaclesNb (int $krakenId): array
     {
         $sql = "SELECT COUNT(id) FROM tentacle WHERE kraken_id=:kraken_id";
         $this->prepare($sql);
@@ -328,7 +328,7 @@ class Tentacle extends Database
      * 
      * @return bool
      */
-    public function delete ($id): bool
+    public function delete (int $id): bool
     {
         $sql = "DELETE FROM tentacle WHERE id=:id";
         $this->prepare($sql);

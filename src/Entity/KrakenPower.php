@@ -128,7 +128,7 @@ class KrakenPower extends Database
      * 
      * @return array
      */
-    public function getAllPowersByKrakenId ($id): array
+    public function getAllPowersByKrakenId (int $id): array
     {
         $sql = "SELECT * FROM power
                 LEFT JOIN kraken_power ON kraken_power.kraken_id=:id
@@ -148,7 +148,7 @@ class KrakenPower extends Database
      * 
      * @return array
      */
-    public function getPowersNb ($krakenId): array
+    public function getPowersNb (int $krakenId): array
     {
         $sql = "SELECT COUNT(id) FROM kraken_power WHERE kraken_id=:kraken_id";
         $this->prepare($sql);
@@ -182,7 +182,7 @@ class KrakenPower extends Database
             $this->prepare($sql);
             $this->bindParam(':id', $id, \PDO::PARAM_INT); 
             $this->execute();
-            
+
             return $this->rowCount() === 1 ? true : false;
         }
     }

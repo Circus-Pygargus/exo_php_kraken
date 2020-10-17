@@ -297,6 +297,9 @@ commit -m "ajout gestion coté front de la route '/power/remove'"
 nettoyage des console.log() oubliés
 commit -m "nettoyage des console.log() oubliés"
 
+correction php : ajout des type d'attribut et type de retour de fonctions manquants
+commit -m "correction php : ajout des types d'attributs et de retour des fonctions manquants o_O"
+
 
 
 

@@ -84,7 +84,7 @@ class Power extends Database
      * 
      * @return array
      */
-    public function getById ($id): array
+    public function getById (int $id): array
     {
         $sql = "SELECT * FROM power WHERE id=:id";
         $this->prepare($sql);
