@@ -109,7 +109,7 @@ const manageBtnsActivation = () => {
         tentacleRemoveBtn.disabled = false;
         powerAddBtn.disabled = powersNb === 0 ? false : true;
     }
-    else if (tentaclesNb > 4 && tentaclesNb < 8) {
+    else if (tentaclesNb >= 4 && tentaclesNb < 8) {
         tentacleAddBtn.disabled = false;
         tentacleRemoveBtn.disabled = false;
         powerAddBtn.disabled = powersNb < 2 ? false : true;
