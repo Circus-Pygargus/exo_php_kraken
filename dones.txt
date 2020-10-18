@@ -303,6 +303,11 @@ commit -m "correction php : ajout des types d'attributs et de retour des fonctio
 modif page d'info d'un kraken : mise en place d'un tableau pour afficher les propriétés de chaque tentacule
 commit -m "modif page info kraken : affichage des tentacules sous forme de tableau"
 
+construction de la page d'accueil :
+mise en place html pour afficher la liste des krakenPowers
+modif de la méthode back end pour cette route
+commit -m "ajout liste des krakens en page d'accueil"
+
 
 
 

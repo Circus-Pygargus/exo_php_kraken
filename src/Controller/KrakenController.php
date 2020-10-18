@@ -20,7 +20,30 @@ class KrakenController extends Controller
      */
     public function index (): string
     {
-        return $this->twig->render('index.html.twig');
+        $krakenModel = new Kraken();
+        $krakens = $krakenModel->getAll();
+
+        $tentacleModel = new Tentacle();
+        $krakenPowerModel = new KrakenPower();
+
+        foreach ($krakens as &$kraken) {
+            $result = $tentacleModel->getTentaclesNb($kraken["id"]);
+            $kraken["tentacleNb"] = $result["COUNT(id)"];
+
+            $powers = $krakenPowerModel->getAllPowersByKrakenId($kraken["id"]);
+            $kraken["powers"] = "";
+            foreach ($powers as $power) {
+                if (!$kraken["powers"]) {
+                    $kraken["powers"] = $power["name"];
+                }
+                else {
+                    $kraken["powers"] .= ', ' . $power["name"];
+                }
+            }
+        }
+        return $this->twig->render('index.html.twig', [
+            "krakens" => $krakens
+        ]);
     }
 
 

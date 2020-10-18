@@ -1,10 +1,47 @@
 {% extends "base.html.twig" %}
 
 {% block title %}
-    <title>exo php Kraken</title>
+    <title>Liste des Krakens</title>
 {% endblock %}
 
 
 {% block header %}
-    <h1>Kraken</h1>
+    <h1 class="display-3 mt-5 mb-3 text-center">KRAKENs</h1>
+{% endblock %}
+
+
+{% block main %}
+    <div class="container">
+
+        <table class="table table-hover table-bordered mt-5">
+            <thead>
+                <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="col">Age</th>
+                    <th scope="col">Taille</th>
+                    <th scope="col">Poids</th>
+                    <th scope="col">Nbr tentacules</th>
+                    <th scope="col">Pouvoirs</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for kraken in krakens %}
+                    <tr>
+                        <td class=>
+                            <a href="/kraken/{{ kraken.id }}">{{ kraken.name }}</a>
+                        </td>
+                        <td class=>{{ kraken.age }}</td>
+                        <td class=>{{ kraken.height }}</td>
+                        <td class=>{{ kraken.weight }}</td>
+                        <td class=>{{ kraken.tentacleNb }}</td>
+                        <td class=>{{ kraken.powers }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="">
+            <a class="btn btn-secondary mt-3" href="/kraken/new">Créer un nouveau kraken</a>
+        </div>
+    </div>
 {% endblock %}
