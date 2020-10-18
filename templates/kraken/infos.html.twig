@@ -6,7 +6,7 @@
 
 
 {% block header %}
-    <h1 class="mt-5 mb-3 text-center">KRAKENs</h1>
+    <h1 class="display-3 mt-5 mb-3 text-center">KRAKENs</h1>
     <nav>
         <div class="container">
             <div class="container-fluid">
@@ -21,7 +21,7 @@
             </div>
         </div>
     </nav>
-    <H2 class="m-4 text-center">{{ kraken.name }}</h2>
+    <H2 class="display-4 m-4 text-center">{{ kraken.name }}</h2>
 {% endblock %}
 
 
@@ -89,28 +89,28 @@
                 {# Deuxième colonne : informations du kraken #}
                 <div class="col">
                     <div class="row">
-                        <div class="col-3">Age :</div>
+                        <div class="col-3"><b>Age :</b></div>
                         <div class="col-9">{{ kraken.age }} an{% if kraken.age > 1 %}s{% endif %}</div>
                     </div>
                     <div class="row">
-                        <div class="col-3">Taille :</div>
+                        <div class="col-3"><b>Taille :</b></div>
                         <div class="col-9">{{ kraken.height }} mètre{% if kraken.height > 1 %}s{% endif %}</div>
                     </div>
                     <div class="row">
-                        <div class="col-3">Poids :</div>
+                        <div class="col-3"><b>Poids :</b></div>
                         <div class="col-9">{{ kraken.weight }} tonne{% if kraken.weight > 1 %}s{% endif %}</div>
                     </div>
-                    <div class="row mt-1">
-                        <div class="col-3">Tentacules :</div>
+                    <div class="row mt-4 mb-3">
+                        <div class="col-3"><b>Tentacules :</b></div>
                         <div class="col-9" id="tentacles-infos">
-                            <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
+                            {# remplacer le <br> par un bouton d'affichage oui/non #}
                             {% embed "partial/tentacles-infos.html.twig" %}{% endembed %}
                         </div>
                     </div>
                     <div class="row mt-1">
-                        <div class="col-3">Pouvoirs :</div>
+                        <div class="col-3"><b>Pouvoirs :</b></div>
                         <div class="col-9" id="powers-infos">
-                            <br> {# remplacer le <br> par un bouton d'affichage oui/non #}
+                             {# remplacer le <br> par un bouton d'affichage oui/non #}
                             {% embed "partial/powers-infos.html.twig" %}{% endembed %}
                         </div>
                     </div>

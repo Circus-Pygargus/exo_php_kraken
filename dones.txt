@@ -300,6 +300,10 @@ commit -m "nettoyage des console.log() oubliés"
 correction php : ajout des type d'attribut et type de retour de fonctions manquants
 commit -m "correction php : ajout des types d'attributs et de retour des fonctions manquants o_O"
 
+modif page d'info d'un kraken : mise en place d'un tableau pour afficher les propriétés de chaque tentacule
+commit -m "modif page info kraken : affichage des tentacules sous forme de tableau"
+
+
 
 
 

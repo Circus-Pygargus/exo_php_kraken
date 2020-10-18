@@ -1,4 +1,28 @@
-{% for tentacle in tentacles %}
+
+    <table class="table table-hover table-bordered">
+        <thead>
+            <tr>
+            <th scope="col">Nom</th>
+            <th scope="col">Points de vie</th>
+            <th scope="col">Force</th>
+            <th scope="col">Dextérité</th>
+            <th scope="col">Constitution</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for tentacle in tentacles %}
+            <tr class="tentacle">
+                <td class="text-center">{{ tentacle.name }}</td>
+                <td class="text-center">{{ tentacle.life_points }}</td>
+                <td class="text-center">{{ tentacle.forcee }}</td>
+                <td class="text-center">{{ tentacle.dexterity }}</td>
+                <td class="text-center">{{ tentacle.constitution }}</td>
+            </tr>
+            {% endfor %} 
+        </tbody>
+    </table>
+
+{#
     <div class="tentacle">
     <div class="row">
         <div class="col-4">Nom :</div>
@@ -21,4 +45,4 @@
         <div class="col">{{ tentacle.constitution }}</div>
     </div>
     </div>
-{% endfor %} 
+#}
