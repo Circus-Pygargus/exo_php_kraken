@@ -308,6 +308,9 @@ mise en place html pour afficher la liste des krakenPowers
 modif de la méthode back end pour cette route
 commit -m "ajout liste des krakens en page d'accueil"
 
+ajout du type de retour void aux controlleurs qui répondent avec un echo json_encode($response)
+commit -m "merci Thomas, ajout type de retour void lorsque nécessaire"
+
 
 
 

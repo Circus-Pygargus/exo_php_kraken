@@ -16,8 +16,10 @@ class PowerController extends Controller
      * Route '/power/add'
      * 
      * Add a power
+     * 
+     * @return void
      */
-    public function add ()
+    public function add (): void
     {
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 
@@ -107,8 +109,10 @@ class PowerController extends Controller
      * Remove a power to a kraken
      * 
      * Route '/power/remove'
+     * 
+     * @return void
      */
-    public function remove ()
+    public function remove (): void
     {
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? $_SERVER["CONTENT_TYPE"] : '';
         

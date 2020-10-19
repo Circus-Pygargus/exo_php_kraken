@@ -15,8 +15,9 @@ class TentacleController extends Controller
      * 
      * Create a Tentacle
      * 
+     * @return void
      */
-    public function create ()
+    public function create (): void
     {
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 
@@ -86,8 +87,10 @@ class TentacleController extends Controller
      * Route '/tentacle/delete'
      * 
      * Delete a tentacle
+     * 
+     * @return void
      */
-    public function delete ()
+    public function delete (): void
     {
         $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
 
